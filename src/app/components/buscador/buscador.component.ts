@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HeroesService } from '../../servicios/heroes.service';
+import { HeroesService, Heroe } from '../../servicios/heroes.service';
 import { HeroesComponent } from '../heroes/heroes.component';
 
 @Component({
   selector: 'app-buscador',
   templateUrl: './buscador.component.html',
+  providers: [HeroesComponent],
 })
 export class BuscadorComponent implements OnInit {
 
-heroes: any[] = [];
+heroes: Heroe[] = [];
 termino: string;
 
   constructor( private activatedRoute: ActivatedRoute,
               private _heroesService: HeroesService,
-            private heroesComponent: HeroesComponent) {
+            public heroesComponent: HeroesComponent) {
 
                }
 
