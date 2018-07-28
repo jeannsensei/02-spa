@@ -59,6 +59,14 @@ export class HeroesService {
             img: 'assets/img/wolverine.png',
             aparicion: '1974-11-01',
             casa: 'Marvel'
+        },
+        {
+            numb: '8',
+            nombre: 'Dixon',
+            bio: 'Software Developer with a Chemical Engineering degree. I\'m a fast learner with strong problem solving skills that it\'s always willing to take new challenges.',
+            img: 'https://media.licdn.com/dms/image/C5603AQFGrdys0-iVBQ/profile-displayphoto-shrink_200_200/0?e=1537401600&v=beta&t=fDF4eHhwxDMj9SgZG4xbC-ezzWyFTlkYBSvp11VRK30',
+            aparicion: '????-??-??',
+            casa: 'Marvel'
         }
     ];
 
